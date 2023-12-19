@@ -1,0 +1,49 @@
+:root{
+    --font-color:#643A6B;
+    --body-color: #5F264A;
+    --border-color:black;
+    --link-bg-color:#B0A4A4; 
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color:var(--body-color);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.utube{
+position: relative;
+bottom: 200px;
+}
+#utube-link{
+    background-color: var(--link-bg-color);
+    border: 3px solid var(--border-color);
+    border-radius: 15px;
+    height: 35PX;
+    width: 800px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 15px;
+}
+#utube-link::placeholder{
+    color: var(--font-color);
+}
+.user-input button{
+    background-color: var(--link-bg-color);
+    border: 3px solid var(--border-color);
+    border-radius: 15px;
+    height: 40PX;
+    width: 100px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 15px;
+}
+.user-input button:hover{
+    cursor: pointer;
+}

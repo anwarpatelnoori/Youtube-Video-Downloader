@@ -29,21 +29,69 @@ bottom: 200px;
     width: 800px;
     text-align: center;
     font-weight: bold;
-    font-size: 15px;
+    font-size: 30px;
+    
 }
 #utube-link::placeholder{
     color: var(--font-color);
 }
-.user-input button{
+#utube-link:not(:placeholder){
+    color: var(--font-color);
+    font-size: 10px;
+}
+#get-video-btn{
     background-color: var(--link-bg-color);
     border: 3px solid var(--border-color);
     border-radius: 15px;
     height: 40PX;
-    width: 100px;
+    width: 110px;
     text-align: center;
     font-weight: bold;
-    font-size: 15px;
+    font-size: 20px;
+    color: var(--font-color);
 }
 .user-input button:hover{
     cursor: pointer;
 }
+.user-input{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#utube-link, #get-video-btn{
+height: 35px;
+margin: 5px;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px){
+    body{
+        background-color: aqua;
+    }
+    #utube-link{
+        height: 35PX;
+        width: 600px;
+        font-size: 25px;
+    }
+}
+@media only screen and (max-width:767px) {
+    body{
+        background-color: black;
+    }
+    .utube{
+        position: relative;
+        bottom: 320px;
+    }
+    #utube-link{
+        height: 25px;
+        width: 220px;
+        font-size: 10px;
+        border-radius: 10px;
+    }
+    #get-video-btn{
+        height: 30px;
+        font-size: 10px;
+        width: 60px;
+        border-radius: 10px;
+    }
+
+}    

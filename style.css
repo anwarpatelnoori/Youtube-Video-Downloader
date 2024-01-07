@@ -118,7 +118,7 @@ bottom: 200px; */
     height: 60%;
     width: 100%;
     background-color: var(--section-bg-color-2);
-    background-image: url('images/bg-image.jpg');
+    background-image: url('images/image1.avif');
     background-size: 100% 100%;
     background-position: center;
     background-repeat: no-repeat;
@@ -133,9 +133,9 @@ bottom: 200px; */
     width: 100%;
 }
 
-/* .utube-video-title p{
-    padding-top: 20px;
-} */
+.utube-video-title p{
+    font-size: 40px;
+}
 /* utube-video-detail */
 .utube-video-detail {
     background-color: var(--video-detail-bg-color);
@@ -226,6 +226,9 @@ bottom: 200px; */
     .downnload-title {
         font-size: 50px;
     }
+    .utube-video-title p{
+        font-size: 30px;
+    }
 }
 
 /* Tab mode endddddddd */
@@ -277,7 +280,7 @@ bottom: 200px; */
     }
 
     .downnload-title {
-        font-size: 20px;
+        font-size: 15px;
     }
 
     .video-quaity .btn {
@@ -293,6 +296,9 @@ bottom: 200px; */
         font-size: 10px;
         color: white;
         align-items: center;
+    }
+    .utube-video-title p{
+        font-size: 10px;
     }
 }
 

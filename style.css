@@ -1,23 +1,28 @@
 :root {
-    --background-color: #000000;
+    --background-color: #1D2B53;
+    --download-bg-color: #7E2553;
+    --video-title-bg-color:#FF004D;
+    --video-detail-bg-color:#00E756;
+    --text-color:#F8F8F8;
     --background-color-tab: #800000;
     --background-color-mobile: #800080;
     --font-color: #E0E0E0;
     --border-color: #373737;
     --button-bg-color: #00FFFF;
     --section-bg-color-1: #150050;
-    --section-bg-color-2:#3F0071;
+    --section-bg-color-2: #3F0071;
     --highlight-color: #03DAC6;
 }
 
 /* whole body css starttttttt */
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-body{
-    background-color:var(--background-color);
+
+body {
+    background-color: var(--background-color);
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -25,15 +30,16 @@ body{
     justify-content: center;
 }
 
-.utube{
-/* position: relative;
+.utube {
+    /* position: relative;
 bottom: 200px; */
-margin-bottom: 20px;
+    margin-bottom: 20px;
 }
+
 /* whole body css endddddddd */
 
 /* utube-link css and placeholder starttttttt*/
-#utube-link{
+#utube-link {
     background-color: var(--section-bg-color-1);
     border: 3px solid var(--border-color);
     border-radius: 15px;
@@ -42,19 +48,22 @@ margin-bottom: 20px;
     text-align: center;
     font-weight: bold;
     font-size: 30px;
-    
+
 }
-#utube-link::placeholder{
-    color: var(--font-color);
+
+#utube-link::placeholder {
+    color: var(--text-color);
 }
-#utube-link:not(:placeholder){
-    color: var(--font-color);
+
+#utube-link:not(:placeholder) {
+    color: var(--text-color);
     font-size: 10px;
 }
+
 /* utube-link css and placeholder endddddddd */
 
 /* button css starttttttt */
-#get-video-btn{
+.btn {
     background-color: var(--button-bg-color);
     border: 3px solid var(--border-color);
     border-radius: 15px;
@@ -65,39 +74,47 @@ margin-bottom: 20px;
     font-size: 20px;
     color: white;
 }
-.user-input button:hover{
+
+.user-input button:hover {
     cursor: pointer;
 }
-.user-input{
+
+.user-input {
     display: flex;
     align-items: center;
     justify-content: center;
 }
-#utube-link, #get-video-btn{
-height: 35px;
-margin: 5px;
+
+#utube-link,
+#get-video-btn {
+    height: 35px;
+    margin: 5px;
 }
+
 /* button css endddddddd */
 
 
 /* utube-data css starttttttt */
-.utube-full-data{
+.utube-full-data {
+    display: none;
     height: 30rem;
     width: 58rem;
     border: 3px solid var(--border-color);
     margin-top: 15px;
 }
+
 /* utube-video-data starttttttt */
-.utube-video-data{
+.utube-video-data {
     height: 100%;
     width: 70%;
-    border: 3px solid var(--border-color);
+    /* border: 3px solid var(--border-color); */
     background-color: var(--section-bg-color-1);
 }
+
 /* utube-video-data  endddddddd*/
 
 /* utube-video-thumbnail starttttttt */
-.utube-video-thumbnail{
+.utube-video-thumbnail {
     height: 60%;
     width: 100%;
     background-color: var(--section-bg-color-2);
@@ -107,7 +124,73 @@ margin: 5px;
     background-repeat: no-repeat;
 }
 
+/* utube-video-title  */
+.utube-video-title {
+    background-color: var(--video-title-bg-color);
+    border-bottom: 3px solid var(--border-color);
+    color: white;
+    height: 25%;
+    width: 100%;
+}
 
+/* .utube-video-title p{
+    padding-top: 20px;
+} */
+/* utube-video-detail */
+.utube-video-detail {
+    background-color: var(--video-detail-bg-color);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 15%;
+    padding-bottom: 20px;
+}
+
+.utube-video-detail p {
+    color: white;
+    margin-top: 20px;
+    font-size: 40px;
+}
+
+.download-section {
+    background-color: var(--download-bg-color);
+    height: 100%;
+    width: 30%;
+    color: var(--text-color);
+}
+
+.downnload-title {
+    height: 20%;
+    text-align: center;
+    font-size: 60px;
+    font-weight: bold;
+    /* border-bottom: 2px solid var(--border-color); */
+}
+
+.all-video-quality {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.video-quaity {
+    height: 16%;
+}
+
+.video-quaity p {
+    font-size: 25px;
+}
+
+.video-quaity .btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: green;
+}
+.video-quaity button:hover{
+    cursor: pointer;
+}
 
 
 
@@ -119,48 +202,99 @@ margin: 5px;
 
 
 /* Tab mode starttttttt */
-@media only screen and (min-width: 768px) and (max-width: 1024px){
-    body{
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    body {
         background-color: var(--background-color-tab);
     }
-    #utube-link{
+
+    #utube-link {
         height: 35PX;
         width: 600px;
         font-size: 25px;
     }
-    .utube-full-data{
+
+    .utube-full-data {
         height: 20rem;
         width: 45rem;
     }
+
+    .utube-video-detail p {
+        margin-top: 15px;
+        font-size: 30px;
+    }
+
+    .downnload-title {
+        font-size: 50px;
+    }
 }
+
 /* Tab mode endddddddd */
 
 
 /* mobile mode starttttttt */
 @media only screen and (max-width:767px) {
-    body{
+    body {
         background-color: var(--background-color-mobile);
     }
-    .utube{
+
+    .utube {
         position: relative;
-        bottom: 320px;
+        bottom: 220px;
     }
-    #utube-link{
+
+    #utube-link {
         height: 30px;
         width: 220px;
         font-size: 10px;
         border-radius: 10px;
     }
-    #get-video-btn{
+
+    #get-video-btn {
         height: 30px;
         font-size: 10px;
         width: 60px;
         border-radius: 10px;
     }
-    .utube-full-data{
+
+    .utube-full-data {
         height: 150px;
         width: 19rem;
     }
+    .utube-video-title{
+        padding-bottom: 10px;
+    }
 
+    .utube-video-title p {
+        /* border: 3px solid var(--border-color); */
+        color: var(--text-color);
+        font-size: 6px;
+        
+    }
+
+    .utube-video-detail p {
+        color: var(--text-color);
+        font-size: 10px;
+    }
+
+    .downnload-title {
+        font-size: 20px;
+    }
+
+    .video-quaity .btn {
+        display: flex;
+        justify-content: center;
+        background-color: var(--button-bg-color);
+        border: 3px solid var(--border-color);
+        border-radius: 15px;
+        height: 20PX;
+        width: 80px;
+        text-align: center;
+        font-weight: bold;
+        font-size: 10px;
+        color: white;
+        align-items: center;
+    }
 }
-/* mobile mode endddddddd */    
+
+
+/* mobile mode endddddddd */

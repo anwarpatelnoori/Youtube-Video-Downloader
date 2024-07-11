@@ -13,3 +13,4 @@ get_vido_btn.addEventListener("click", (getVideo)=>{
         })
     utube_full_data.style.display = 'flex';
 })
+// this is the script.js file that will be used to fetch the data from the server
